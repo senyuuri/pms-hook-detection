@@ -40,7 +40,11 @@ public class PmsHookDetection extends AppCompatActivity {
         tv = (TextView)findViewById(R.id.textView);
 
         printBanner();
-        performJavaCheck();
+        tv.append("(1/3) Checking PMS hook in ActivityThread at Java Level\n");
+        checkJavaActivityThread();
+        tv.append("(2/3) Checking PMS hook in ApplicationContext at Java Level\n");
+        checkJavaActivityContext();
+        tv.append("(3/3) Checking PMS hook in ActivityThread at native Level\n");
         performNativeCheck();
     }
 
@@ -54,8 +58,7 @@ public class PmsHookDetection extends AppCompatActivity {
                 " */\n\n");
     }
 
-    private void performJavaCheck(){
-        tv.append("Performing hook detection at Java level\n");
+    private void checkJavaActivityThread(){
         try {
             Class<?> activityThreadClass = Class.forName("android.app.ActivityThread");
             Method currentActivityThreadMethod = activityThreadClass.getDeclaredMethod("currentActivityThread");
@@ -67,22 +70,30 @@ public class PmsHookDetection extends AppCompatActivity {
             Object sPackageManager = sPackageManagerField.get(currentActivityThread);
             tv.append("Obtain sPackageManager object .......... Done\n");
             tv.append(sPackageManager.toString() + "\n");
-            checkPMSHook(sPackageManager);
-
-            PackageManager pm = getApplicationContext().getPackageManager();
-            Field mPmField = pm.getClass().getDeclaredField("mPM");
-            mPmField.setAccessible(true);
-            Object mPmObject = mPmField.get(pm);
-            tv.append("Obtain mPM object from Context .......... Done\n");
-            tv.append(mPmObject.toString() + "\n");
-            checkPMSHook(mPmObject);
+            checkProxy(sPackageManager);
 
         } catch(Exception e){
             tv.append(e.toString());
         }
     }
 
-    private void checkPMSHook(Object o){
+    private void checkJavaActivityContext(){
+        try {
+            PackageManager pm = getApplicationContext().getPackageManager();
+            Field mPmField = pm.getClass().getDeclaredField("mPM");
+            mPmField.setAccessible(true);
+            Object mPmObject = mPmField.get(pm);
+            tv.append("Obtain mPM object from Context .......... Done\n");
+            tv.append(mPmObject.toString() + "\n");
+            checkProxy(mPmObject);
+
+        } catch(Exception e){
+            tv.append(e.toString());
+        }
+    }
+
+
+    private void checkProxy(Object o){
         if (o instanceof Proxy) {
             tv.append("########  PMS Hook Detected ######## \n\n");
         }
@@ -91,5 +102,4 @@ public class PmsHookDetection extends AppCompatActivity {
     private void performNativeCheck(){
         tv.append(nativePmsDetection(getApplicationContext()));
     }
-
 }

@@ -28,19 +28,23 @@ Java_com_example_hellojni_PmsHookDetection_nativePmsDetection( JNIEnv* env, jobj
     // Check PMS hook at current thread's sPackageManager
     jclass proxyClazz = (*env)->FindClass(env, "java/lang/reflect/Proxy");
     if((*env)->IsInstanceOf(env, sPackageManager, proxyClazz)){
-        //return (*env)->NewStringUTF(env, "########  PMS Hook Detected ########");
-    }
-
-    // Check PMS hook at mPm field in ContextWrapper
-    jclass contextWrapperCls = (*env)->FindClass(env, "android/content/ContextWrapper");
-    jmethodID getPackageManagerId = (*env)->GetMethodID(env, contextWrapperCls, "getPackageManager", "()Landroid/content/pm/PackageManager;");
-    jobject applicationPackageManager =  (*env)->CallObjectMethod(env, context, getPackageManagerId);
-
-    jclass packageManagerCls = (*env)->FindClass(env, "android/app/ApplicationPackageManager");
-    jfieldID mPmField = (*env)->GetFieldID(env, packageManagerCls, 'mPm', "Landroid/content/pm/IPackageManager;");
-    jobject mPmObj = (*env)->GetObjectField(env, applicationPackageManager, mPmField);
-    if((*env)->IsInstanceOf(env, mPmObj, proxyClazz)){
         return (*env)->NewStringUTF(env, "########  PMS Hook Detected ########");
     }
+
+    // TODO check PMS hook at mPm field in ContextWrapper
+    // This method can be more challenging because of multiple layers of inheritance
+//    jclass contextWrapperCls = (*env)->FindClass(env, "android/content/ContextWrapper");
+//    jmethodID getPackageManagerId = (*env)->GetMethodID(env, contextWrapperCls, "getPackageManager", "()Landroid/content/pm/PackageManager;");
+//    jobject applicationPackageManager =  (*env)->CallObjectMethod(env, context, getPackageManagerId);
+//
+//    jclass packageManagerCls = (*env)->FindClass(env, "android/app/ApplicationPackageManager");
+
+    // TODO fix the crash here
+//    jfieldID mPmField = (*env)->GetFieldID(env, packageManagerCls, 'mPm', "Landroid/content/pm/IPackageManager;");
+//    jobject mPmObj = (*env)->GetObjectField(env, applicationPackageManager, mPmField);
+//    if((*env)->IsInstanceOf(env, mPmObj, proxyClazz)){
+//        return (*env)->NewStringUTF(env, "########  PMS Hook Detected ########");
+//    }
+
     return (*env)->NewStringUTF(env, "PMS hook not detected");
 }
