@@ -1,0 +1,67 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/zhanyl/workspace/pms-hook-detection",
+      "sdkFolder": "/Users/zhanyl/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/zhanyl/workspace/pms-hook-detection/app",
+      "makeFile": "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/zhanyl/workspace/pms-hook-detection/.cxx",
+      "cxxFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx",
+      "ndkFolder": "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "arm8Release",
+    "soFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/arm8Release/lib",
+    "objFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/arm8Release/obj",
+    "jsonFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release",
+    "gradleBuildOutputFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARM64_V8A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a",
+  "jsonFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a",
+  "objFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/arm8Release/obj/arm64-v8a",
+  "buildCommandFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a/build_command.txt",
+  "buildOutputFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a/build_output.txt",
+  "modelOutputFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/build_generation_state.json",
+    "cacheKeyFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/arm8Release/arm64-v8a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm8Release/arm64-v8a/compile_commands.json"
+}

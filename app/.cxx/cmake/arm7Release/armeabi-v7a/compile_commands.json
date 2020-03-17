@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Release/armeabi-v7a",
+  "command": "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi23 --gcc-toolchain=/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dhello_jni_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC   -o CMakeFiles/hello-jni.dir/hello-jni.c.o   -c /Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/hello-jni.c",
+  "file": "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/hello-jni.c"
+}
+]

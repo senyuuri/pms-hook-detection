@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi23 --gcc-toolchain=/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dhello_jni_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake",
+    "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/CMakeLists.txt",
+    "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "hello-jni-Release-armeabi-v7a": {
+      "buildCommand": "/Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Release/armeabi-v7a\" hello-jni",
+      "buildType": "release",
+      "toolchain": "2149926562",
+      "abi": "armeabi-v7a",
+      "artifactName": "hello-jni",
+      "files": [
+        {
+          "src": "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/hello-jni.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/arm7Release/obj/armeabi-v7a/libhello-jni.so"
+    }
+  },
+  "toolchains": {
+    "2149926562": {
+      "cCompilerExecutable": "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

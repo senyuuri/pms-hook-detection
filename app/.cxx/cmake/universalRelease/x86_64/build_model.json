@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/zhanyl/workspace/pms-hook-detection",
+      "sdkFolder": "/Users/zhanyl/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/zhanyl/workspace/pms-hook-detection/app",
+      "makeFile": "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/zhanyl/workspace/pms-hook-detection/.cxx",
+      "cxxFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx",
+      "ndkFolder": "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "universalRelease",
+    "soFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalRelease/lib",
+    "objFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalRelease/obj",
+    "jsonFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease",
+    "gradleBuildOutputFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64",
+  "jsonFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64",
+  "objFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalRelease/obj/x86_64",
+  "buildCommandFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/build_command.txt",
+  "buildOutputFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/build_output.txt",
+  "modelOutputFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/build_generation_state.json",
+    "cacheKeyFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86_64/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/compile_commands.json"
+}

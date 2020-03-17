@@ -1,0 +1,3 @@
+/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/CMakeFiles/edit_cache.dir
+/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86_64/CMakeFiles/hello-jni.dir

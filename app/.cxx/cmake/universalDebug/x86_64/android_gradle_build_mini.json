@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake",
+    "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/CMakeLists.txt",
+    "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalDebug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalDebug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "hello-jni-Debug-x86_64": {
+      "artifactName": "hello-jni",
+      "buildCommand": "/Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalDebug/x86_64\" hello-jni",
+      "abi": "x86_64",
+      "output": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalDebug/obj/x86_64/libhello-jni.so"
+    }
+  }
+}

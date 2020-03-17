@@ -1,0 +1,7 @@
+Executable : /Users/zhanyl/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Debug/armeabi-v7a
+hello-jni
+jvmArgs : 
+

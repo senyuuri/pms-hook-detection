@@ -1,0 +1,10 @@
+ninja: Entering directory `/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/arm7Debug/armeabi-v7a'
+[1/2] Building C object CMakeFiles/hello-jni.dir/hello-jni.c.o
+/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/hello-jni.c:42:68: warning: multi-character character constant [-Wmultichar]
+    jfieldID mPmField = (*env)->GetFieldID(env, packageManagerCls, 'mPm', "Landroid/content/pm/IPackageManager;");
+                                                                   ^
+/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/hello-jni.c:42:68: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    jfieldID mPmField = (*env)->GetFieldID(env, packageManagerCls, 'mPm', "Landroid/content/pm/IPackageManager;");
+                                                                   ^~~~~
+2 warnings generated.
+[2/2] Linking C shared library /Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/arm7Debug/obj/armeabi-v7a/libhello-jni.so

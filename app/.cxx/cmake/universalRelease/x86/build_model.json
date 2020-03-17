@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/zhanyl/workspace/pms-hook-detection",
+      "sdkFolder": "/Users/zhanyl/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/zhanyl/workspace/pms-hook-detection/app",
+      "makeFile": "/Users/zhanyl/workspace/pms-hook-detection/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/zhanyl/workspace/pms-hook-detection/.cxx",
+      "cxxFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx",
+      "ndkFolder": "/Users/zhanyl/Library/Android/sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "universalRelease",
+    "soFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalRelease/lib",
+    "objFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalRelease/obj",
+    "jsonFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease",
+    "gradleBuildOutputFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86",
+  "jsonFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86",
+  "objFolder": "/Users/zhanyl/workspace/pms-hook-detection/app/build/intermediates/cmake/universalRelease/obj/x86",
+  "buildCommandFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86/build_command.txt",
+  "buildOutputFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86/build_output.txt",
+  "modelOutputFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/build_generation_state.json",
+    "cacheKeyFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cxx/universalRelease/x86/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/zhanyl/workspace/pms-hook-detection/app/.cxx/cmake/universalRelease/x86/compile_commands.json"
+}

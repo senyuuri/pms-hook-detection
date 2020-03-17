@@ -17,47 +17,30 @@
 #include <string.h>
 #include <jni.h>
 
-/* This is a trivial JNI example where we use a native method
- * to return a new VM String. See the corresponding Java source
- * file located at:
- *
- *   hello-jni/app/src/main/java/com/example/hellojni/HelloJni.java
- */
 JNIEXPORT jstring JNICALL
-Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env,
-                                                  jobject thiz )
+Java_com_example_hellojni_PmsHookDetection_nativePmsDetection( JNIEnv* env, jobject thiz, jobject context)
 {
-#if defined(__arm__)
-    #if defined(__ARM_ARCH_7A__)
-    #if defined(__ARM_NEON__)
-      #if defined(__ARM_PCS_VFP)
-        #define ABI "armeabi-v7a/NEON (hard-float)"
-      #else
-        #define ABI "armeabi-v7a/NEON"
-      #endif
-    #else
-      #if defined(__ARM_PCS_VFP)
-        #define ABI "armeabi-v7a (hard-float)"
-      #else
-        #define ABI "armeabi-v7a"
-      #endif
-    #endif
-  #else
-   #define ABI "armeabi"
-  #endif
-#elif defined(__i386__)
-#define ABI "x86"
-#elif defined(__x86_64__)
-#define ABI "x86_64"
-#elif defined(__mips64)  /* mips64el-* toolchain defines __mips__ too */
-#define ABI "mips64"
-#elif defined(__mips__)
-#define ABI "mips"
-#elif defined(__aarch64__)
-#define ABI "arm64-v8a"
-#else
-#define ABI "unknown"
-#endif
+    // function signatures derived from frameworks/base/core/java/android/app/ActivityThread.java
+    jclass activityThread = (*env)->FindClass(env, "android/app/ActivityThread");
+    jfieldID sPackageManagerField = (*env)->GetStaticFieldID(env, activityThread, "sPackageManager", "Landroid/content/pm/IPackageManager;");
+    jobject sPackageManager = (*env)->GetStaticObjectField(env, activityThread, sPackageManagerField);
 
-    return (*env)->NewStringUTF(env, "Hello from JNI !  Compiled with ABI " ABI ".");
+    // Check PMS hook at current thread's sPackageManager
+    jclass proxyClazz = (*env)->FindClass(env, "java/lang/reflect/Proxy");
+    if((*env)->IsInstanceOf(env, sPackageManager, proxyClazz)){
+        //return (*env)->NewStringUTF(env, "########  PMS Hook Detected ########");
+    }
+
+    // Check PMS hook at mPm field in ContextWrapper
+    jclass contextWrapperCls = (*env)->FindClass(env, "android/content/ContextWrapper");
+    jmethodID getPackageManagerId = (*env)->GetMethodID(env, contextWrapperCls, "getPackageManager", "()Landroid/content/pm/PackageManager;");
+    jobject applicationPackageManager =  (*env)->CallObjectMethod(env, context, getPackageManagerId);
+
+    jclass packageManagerCls = (*env)->FindClass(env, "android/app/ApplicationPackageManager");
+    jfieldID mPmField = (*env)->GetFieldID(env, packageManagerCls, 'mPm', "Landroid/content/pm/IPackageManager;");
+    jobject mPmObj = (*env)->GetObjectField(env, applicationPackageManager, mPmField);
+    if((*env)->IsInstanceOf(env, mPmObj, proxyClazz)){
+        return (*env)->NewStringUTF(env, "########  PMS Hook Detected ########");
+    }
+    return (*env)->NewStringUTF(env, "PMS hook not detected");
 }
