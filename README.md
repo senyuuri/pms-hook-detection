@@ -29,3 +29,8 @@ Getting Started
 References
 ---------------
 http://weishu.me/2016/03/07/understand-plugin-framework-ams-pms-hook/
+
+Star History
+---------------
+[![Star History Chart](https://api.star-history.com/svg?repos=senyuuri/pms-hook-detection&type=Date)](https://star-history.com/#senyuuri/pms-hook-detection&Date)
+
